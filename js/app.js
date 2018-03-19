@@ -42,3 +42,16 @@ const greeter = {
 }
 
 greeter.whoAreYou("Hannah")
+
+// #4 collecting strings
+const stringCollector = {
+	collection: ["string1", "string2"],
+	collect(str) {
+		this.collection.push(str.split("").reverse().join(""))
+	},
+	admireCollection () {
+		for (let i = 0; i < this.collection.length; i++) {
+			console.log(this.collection[i])
+		}
+	}
+}

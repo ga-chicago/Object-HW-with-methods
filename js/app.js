@@ -31,3 +31,21 @@ myInformation.birthday();
 console.log(myInformation.age);
 myInformation.changeName();
 console.log(myInformation.name);
+
+// GREETER
+
+const greeter = {
+	hello (name) {
+		return ("Oh hello there, " + name + "!");
+	},
+	goodbye (name) {
+		return ("Arrivederci, " + name + "!");
+	},
+	whoAreYou (name) {
+		return ("Oh right! " + name + ", how could I forget...?");
+	}
+};
+
+console.log(greeter.hello("Tyler"));
+console.log(greeter.goodbye("Tyler"));
+console.log(greeter.whoAreYou("Tyler"));

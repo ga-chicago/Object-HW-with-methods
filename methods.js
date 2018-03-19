@@ -17,3 +17,16 @@ const myInformation = {
 		return "My name is " + myInformation.name + ". I am " + myInformation.age + " years old, and " + myInformation.funFact;
 	}
 }
+
+//GREETER
+const greeter = {
+	hello (name) {
+		return "Oh hello there, " + name + "!";
+	},
+	goodbye (name) {
+		return "Arrivederci, " + name + "!"
+	},
+	whoAreYou (name) {
+		return "Oh right!  " + name + " how could I forget...!"
+	}
+}

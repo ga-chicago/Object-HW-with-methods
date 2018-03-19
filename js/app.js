@@ -54,5 +54,29 @@ const name = "Mark";
 
 console.log(greeter.hello(name));
 console.log(greeter.whoAreYou(name));
-console.log(greeter.goodbye(name))
+console.log(greeter.goodbye(name));
+
+//Collecting Strings
+
+const stringCollector = {
+	collection: [],
+	collect(str) {
+		let revStr = "";
+		for (let i in str) {
+			revStr = str[i] + revStr;
+		}
+		this.collection.unshift(revStr);
+	},
+	admireCollection() {
+		for (let str of this.collection) {
+			console.log(str);
+		}
+	}
+}
+
+stringCollector.collect("Ben");
+stringCollector.collect("racecar");
+stringCollector.collect("beeees");
+stringCollector.admireCollection();
+
 

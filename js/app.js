@@ -10,3 +10,32 @@ const clicker = {
 clicker.click();
 console.log(clicker.clickCount);
 
+//It's All About Me
+
+const myInformation = {
+	name: 'Ben',
+	age: 25,
+	fact: "I have a degree in Chemical Engineering",
+	statement() {
+		return "I am "+this.name+", "+this.fact+", and I will be "+(this.age+10)+" in 10 years.";
+	},
+	birthday() {
+		this.age++;
+		console.log("Celebrate!");
+	},
+	changeName(newName) {
+		this.name = newName;
+	}
+}
+
+console.log(myInformation.statement());
+
+myInformation.birthday();
+
+myInformation.changeName("Rumpelstiltskin");
+
+console.log(myInformation);
+
+
+
+

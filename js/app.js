@@ -36,6 +36,23 @@ myInformation.changeName("Rumpelstiltskin");
 
 console.log(myInformation);
 
+//Greeter
 
+const greeter = {
+	hello(name) {
+		return "Oh hi, "+name+".";
+	},
+	goodbye(name) {
+		return "Ok, bye "+name+".";
+	},
+	whoAreYou(name) {
+		return "Oh right! "+name+" how could I forget...!";
+	}
+}
 
+const name = "Mark";
+
+console.log(greeter.hello(name));
+console.log(greeter.whoAreYou(name));
+console.log(greeter.goodbye(name))
 

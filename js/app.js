@@ -11,17 +11,22 @@ const clicker = {
 // #2 it's all abut me
 
 const myInformation = {
-	name: "Hannah",
-	age: 22,
-	fact: "I moved to Chicago two weeks ago.",
+	statement () {
+		return {
+			name: "Hannah",
+			age: 22,
+			fact: "I moved to Chicago two weeks ago."
+		}
+	},
 	getOlder() {
 		this.age += 1;
 		return this.age;
 	},
 	newName() {
 		this.name = "Rumpelstiltskin"
-		console.log(this.name)
+		console.log(this.name)	
 	}
+	
 }
 
 myInformation.getOlder()
@@ -107,3 +112,10 @@ const calculator = {
 		console.log(this.output);
 	}
 }
+
+
+// const myInformation = {
+// 	statement () {
+
+// 	}
+// }

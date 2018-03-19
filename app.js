@@ -71,6 +71,54 @@ const greet = {
 	}
 }
 
-
 //5. Play around executing your functions by accessing them through the object.
 // <-- All worked - yay!
+
+
+
+//COLLECTING STRINGS
+// Make an object called stringCollector, which has:
+// 1. a collection property - an array to hold strings
+// 2. a collect method which takes a string as a parameter
+// 3. the string collector prefers the strings to be totally reversed in their collection, however, 
+//	  so make sure to reverse it before adding it to the collection
+// 4. add an admireCollection method which prints out each string in the collection to the console, one line at a time
+
+const stringCollector = {
+	collection: [],
+	collect (string) {
+		let newString = string.split("");
+		let reverseString = newString.reverse();
+		return this.collection.push(reverseString.join(""))
+	},
+	admireCollection () {
+			for(element of stringCollector.collection) {
+				console.log(element)
+			}
+		}
+}
+
+for(row of foo77) {
+	// console.log(row) <---all the rows
+	for(element of row) {
+		console.log(element)
+	}
+}
+
+
+//ATM
+// Make an object called atm which has two properties:
+// 1. totalCash, the total amount of cash in the atm
+// 2. dispenseTwenties, a method with takes a number of twenties and, if there is enough cash, returns the total 
+//	  number of cash it is giving out.
+// 3. If there is not enough cash, return null instead.
+
+const atm = {
+	totalCash: 200,
+	dispenseTwenties () {
+// take out cash in multiples of 20
+// return total number of cash it is giving out
+// if not
+	}
+}
+

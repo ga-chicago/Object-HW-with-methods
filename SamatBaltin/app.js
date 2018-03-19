@@ -24,3 +24,16 @@ const myInformation = {
 	}
 }
 myInformation.nameChange('Rumpelstiltskin');
+
+
+const greeter = {
+	hello(name){
+		return "Oh hello there, " + name;
+	},
+	goodbye(name){
+		return "Arrivederci, " + name;
+	},
+	whoAreYou(name){
+		return "Oh right! " + name + " how could i forget...";
+	}
+}

@@ -89,3 +89,71 @@ greeter.finalMessage("Sam");
 
 
 
+
+// Make an object called stringCollector, which has:
+
+// a collection property - an array to hold strings
+// a collect method which takes a string as a parameter
+// the string collector prefers the strings to be totally reversed in their collection, however, so make sure to reverse it before adding it to the collection
+// add an admireCollection method which prints out each string in the collection to the console, one line at a time
+
+
+// Come back to this one. Confused 
+
+
+const reverseOrder = (array) => {
+	return 
+}
+
+ 
+
+const stringCollector = {
+		 collection: ["Hi", "hello", "bye"],
+		
+		stringCollector
+			collect(str) {
+				console.log(collection.reverse())
+				return collection.reverse();
+			
+
+			}
+
+		}
+
+
+// need for of loop from earlier
+
+
+
+
+// ATM
+// Make an object called atm which has two properties:
+
+// totalCash, the total amount of cash in the atm
+// dispenseTwenties, a method with takes a number of twenties and, if there is enough cash, returns the total number of cash it is giving out.
+// If there is not enough cash, return null instead.
+// For example, if the atm has 200 dollars left, the call to dispenseTwenties(6) should return 120, and update the totalCash to 80. However a call to dispenseTwenties(11) should return null.
+
+
+const ATM = {
+	totalCash: 200,
+		dispenseTwenties(num) {
+			if(num * 20 < this.totalCash) { // if the number * 20 is less than the number in total cash then return the number
+			this.totalCash = this.totalCash - num * 20	// take away the total dollar amount from total ATM
+			return num * 20
+
+			
+		} else {
+			return null
+
+
+		}
+	
+	}
+}
+
+
+	
+
+
+

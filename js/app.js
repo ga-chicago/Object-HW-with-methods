@@ -79,4 +79,27 @@ stringCollector.collect("racecar");
 stringCollector.collect("beeees");
 stringCollector.admireCollection();
 
+//ATM
+
+const atm = {
+	totalCash: 0,
+	dispenseTwenties(numOfTwen) {
+		let total = numOfTwen * 20;
+		if (total <= this.totalCash) {
+			this.totalCash -= total;
+			return total;
+		}
+		else {
+			return null;
+		}
+	},
+	fillATM() {
+		this.totalCash = 2000;
+	}
+}
+
+atm.fillATM();
+console.log(atm.dispenseTwenties(10));
+console.log(atm.totalCash);
+console.log(atm.dispenseTwenties(200));
 

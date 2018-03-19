@@ -95,5 +95,26 @@ const atm = {
 	}
 }
 
-// console.log(atm.dispenseTwenties(6));
-console.log(atm.dispenseTwenties(12));
+// console.log(atm.dispenseTwenties(6)); // returns 120
+// console.log(atm.dispenseTwenties(12)); // returns null
+
+const Leonardo = {
+	name: "Leonardo",
+	color: "blue",
+	weapon: "katana",
+	pizzaEaten: false,
+	eatPizza () {
+		if (this.pizzaEaten) {
+			// if evaluates to true
+			this.pizzaEaten = false;
+			// have to reset value before return
+			return (this.name + " has already eaten pizza.");
+		} else {
+			this.pizzaEaten = true;
+			return (this.name + " is eating pizza.");
+		}
+	}
+}
+// Leonardo.eatPizza();
+// console.log(Leonardo.eatPizza()); works either way
+

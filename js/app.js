@@ -86,3 +86,24 @@ const Leonardo = {
 		}
 	}
 }
+
+// #7 calculator
+const calculator = {
+	output: 0,
+	multiply(num1, num2) {
+		this.output = (num1 * num2);
+		console.log(this.output);
+	},
+	divide(num1, num2) {
+		this.output = (num1 / num2);
+		console.log(this.output);
+	}, 
+	add(num1, num2) {
+		this.output = (num1 + num2);
+		console.log(this.output);
+	},
+	subtract(num1, num2) {
+		this.output = (num1 - num2);
+		console.log(this.output);
+	}
+}

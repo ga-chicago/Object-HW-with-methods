@@ -41,7 +41,11 @@ myInformation.statement()
 ////////////////
 
 
-
+const greeter = {
+	hello (name) {
+		return "Hello" + name;
+	}
+}
 
 
 

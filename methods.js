@@ -15,6 +15,12 @@ const myInformation = {
 	funFact: 'I used to be a pilot.',
 	statement (){
 		return "My name is " + myInformation.name + ". I am " + myInformation.age + " years old, and " + myInformation.funFact;
+	},
+	ageAdd (){
+		return this.age +=1;
+	},
+	nameChange (name){
+		return this.name = name;
 	}
 }
 
@@ -28,5 +34,18 @@ const greeter = {
 	},
 	whoAreYou (name) {
 		return "Oh right!  " + name + " how could I forget...!"
+	}
+}
+
+//COLLECTING STRINGS
+const stringCollector = {
+	collection: [],
+	collect(string) {
+		this.collection.push(string.split("").reverse().join(""));	
+	},
+	admireCollection(){
+		for(i = 0; i < this.collection.length; i++){
+			return (this.collection[i]); //This keeps stopping at the first value in the array. 
+		}
 	}
 }

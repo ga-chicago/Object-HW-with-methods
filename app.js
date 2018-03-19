@@ -9,6 +9,8 @@ const clicker = {
 	}
 }
 
+
+
 // IT'S ALL ABOUT ME
 //1. Create an object called myInformation.
 //2. Assign to it your name, your current age, and a fact about you.
@@ -45,3 +47,30 @@ myInformation.increaseAge();
 //	 and assign this new name. Log your object to confirm the changes.
 myInformation.changeName("Rumpelstiltskin");
 myInformation; //<--- returns object info with new name Rumpelstiltskin assigned
+
+
+
+//GREETER
+//1. Create an object called greeter.
+//2. Inside the greeter object, create a method called hello that takes a name as a parameter and returns a greeting message 
+//	 followed by the name parameter.
+//3. Create another method inside greeter called goodbye that takes a name as a parameter and returns a farewell greeting followed 
+//	 by the name parameter.
+//4. Create a final method inside greeter called whoAreYou that takes a name as a parameter and returns "Oh right! ", followed by the 
+//	 name parameter, followed by " how could I forget...!"
+
+const greet = {
+	hello (name) {
+		return "Oh hello there, " + name
+	},
+	goodbye (name) {
+		return "Hasta mañana, " + name
+	},
+	whoAreYou (name) {
+		return "Oh right! " + name + " how could I forget...!"
+	}
+}
+
+
+//5. Play around executing your functions by accessing them through the object.
+// <-- All worked - yay!

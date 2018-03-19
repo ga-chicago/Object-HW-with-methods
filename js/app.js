@@ -19,11 +19,11 @@ const myInformation = {
 		}
 	},
 	getOlder() {
-		this.age += 1;
+		this.statement().age += 1;
 		return this.age;
 	},
 	newName() {
-		this.name = "Rumpelstiltskin"
+		this.statement().name = "Rumpelstiltskin"
 		console.log(this.name)	
 	}
 	

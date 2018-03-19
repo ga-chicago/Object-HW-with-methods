@@ -1,5 +1,3 @@
-# Object-HW-with-methods
-
 :elephant: Remember to test each of your answers!
 
 ## Clicker

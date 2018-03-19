@@ -26,3 +26,19 @@ const myInformation = {
 
 myInformation.getOlder()
 myInformation.newName()
+
+
+// #3 greeter
+const greeter = {
+	hello(name) {
+		return ("Hello, " + name)
+	}, 
+	goodbye(name) {
+		return ("Arrivederci, " + name)
+	}, 
+	whoAreYou(name) {
+		return ("Oh right! " + name + " How could I forget...!")
+	}
+}
+
+greeter.whoAreYou("Hannah")

@@ -51,3 +51,41 @@ const myInformation = {
 
 }
 
+
+
+// Create an object called greeter.
+// Inside the greeter object, create a method called hello that takes a name as a parameter and returns a greeting message followed by the name parameter.
+// Example: Oh hello there, Matthew
+
+// Create another method inside greeter called goodbye that takes a name as a parameter and returns a farewell greeting followed by the name parameter.
+// Example: Arrivederci, Matthew!
+
+// Create a final method inside greeter called whoAreYou that takes a name as a parameter and returns "Oh right! ", followed by the name parameter, followed by " how could I forget...!"
+// Example: Oh right! Matthew how could i forget...!
+
+// Play around executing your functions by accessing them through the object.
+
+const greeter = {
+	message(name) {
+		return "Hello there " + name
+	},
+		goodbyeMessage(name) {
+			return "See ya later, " + name
+		},
+		finalMessage(name) {
+			return "Oh right! " + name + " how could ! forget!"
+		}
+}
+
+
+greeter.message("Sam");
+"Hello there Sam"
+
+greeter.goodbyeMessage("Sam");
+"See ya later, Sam"
+
+greeter.finalMessage("Sam");
+"Oh right! Sam how coould ! forget!"
+
+
+

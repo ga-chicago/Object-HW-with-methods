@@ -55,3 +55,17 @@ const stringCollector = {
 		}
 	}
 }
+
+// #5 ATM
+const atm = {
+	totalCash: 100,
+	dispenseTwenties(num) {
+		if (this.totalCash > (num * 20)) {
+			this.totalCash = this.totalCash - (num * 20)
+			return num * 20;
+		} else if (this.totalCash < (num * 20)) {
+			return null;
+		}
+		
+	}
+}

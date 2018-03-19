@@ -49,3 +49,30 @@ const greeter = {
 console.log(greeter.hello("Tyler"));
 console.log(greeter.goodbye("Tyler"));
 console.log(greeter.whoAreYou("Tyler"));
+
+// COLLECTING STRINGS
+
+const stringCollector = {
+	collection: [],
+	collect (string) {
+		// split into array, reverse, then rejoin as string.
+		const backwardsString = string.split("").reverse().join("");
+		this.collection.push(backwardsString);
+	},
+	admireCollection (array) {
+		// need to store to empty string
+		let stringCollection = "";
+		for (let i = 0; i < array.length; i++) {
+			// need to add space so it reads one at a time
+			stringCollection += array[i] + " ";
+			console.log(stringCollection);
+		}
+	}
+}
+console.log(stringCollector.collect("hello"));
+// adding to collection to test it out
+stringCollector.collect("hello");
+stringCollector.collect("goodbye");
+stringCollector.collect("okay");
+// it works
+stringCollector.admireCollection(stringCollector.collection);

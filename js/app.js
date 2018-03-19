@@ -126,4 +126,37 @@ Leonardo.eatPizza();
 Leonardo.eatPizza();
 console.log(Leonardo.pizzaEaten);
 
+//Calculator (more like Calc-you-later)
 
+const calculator = {
+	output: 0,
+	multiply(num1, num2) {
+		this.output = num1*num2;
+		console.log(this.output);
+	},
+	divide(num1, num2) {
+		this.output = num1/num2;
+		console.log(this.output);
+	},
+	add(num1, num2) {
+		this.output = num1+num2;
+		console.log(this.output);
+	},
+	subtract(num1, num2) {
+		this.output = num1-num2;
+		console.log(this.output);
+	}
+}
+
+calculator.multiply(-2, 8);
+calculator.multiply(2,2);
+calculator.multiply(10,2);
+calculator.divide(-2, 8);
+calculator.divide(2,2);
+calculator.divide(10,2);
+calculator.add(-2, 8);
+calculator.add(2,2);
+calculator.add(10,2);
+calculator.subtract(-2, 8);
+calculator.subtract(2,2);
+calculator.subtract(10,2);

@@ -141,7 +141,6 @@ const ATM = {
 			if(num * 20 < this.totalCash) { // if the number * 20 is less than the number in total cash then return the number
 			this.totalCash = this.totalCash - num * 20	// take away the total dollar amount from total ATM
 			return num * 20
-
 			
 		} else {
 			return null
@@ -151,6 +150,49 @@ const ATM = {
 	
 	}
 }
+
+ATM.dispenseTwenties(4);
+
+80
+
+ATM.totalCash;
+
+120
+
+
+// Create an object called Leonardo.
+// Leonardo should have a name attribute of "Leonardo", a color attribute of "Blue", and a weapon attribute of "Katana".
+// Leonardo should also have a boolean property called pizzaEaten that is initially set to false.
+// Add a method to Leonardo called eatPizza() which does the following:
+// If pizzaEaten is true, print out "Leonardo has already eaten pizza" and set pizzaEaten to false.
+// If pizzaEaten is false, print out "Leonardo is eating pizza" and set pizzaEaten to true.
+
+const Leonardo = {
+	name: "Leonardo",
+	color: "blue",
+	weapon: "Katana",
+	pizzaEaten: false,
+		eatPizza() {
+			if(this.pizzaEaten === false) {
+				this.pizzaEaten = true
+			return "Leonardo is eating pizza"
+
+		} else {
+			this.pizzaEaten = false
+			return "Leonardo has already eaten pizza"	
+			
+		}
+
+	}
+}
+
+Leonardo.eatPizza(false);
+"Leonardo is eating pizza"
+
+Leonardo.pizzaEaten;
+
+true
+
 
 
 	

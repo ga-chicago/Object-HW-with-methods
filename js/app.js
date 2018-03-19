@@ -103,3 +103,27 @@ console.log(atm.dispenseTwenties(10));
 console.log(atm.totalCash);
 console.log(atm.dispenseTwenties(200));
 
+//Hungry Turtles
+
+const Leonardo = {
+	name: "Leonardo",
+	color: "Blue",
+	weapon: "Katana",
+	pizzaEaten: false,
+	eatPizza() {
+		if (this.pizzaEaten === true) {
+			console.log("Leonardo has already eaten pizza");
+			this.pizzaEaten = false;
+		}
+		else {
+			console.log("Leonardo is eating pizza");
+			this.pizzaEaten = true;
+		}
+	}
+}
+
+Leonardo.eatPizza();
+Leonardo.eatPizza();
+console.log(Leonardo.pizzaEaten);
+
+

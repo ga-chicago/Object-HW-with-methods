@@ -49,3 +49,15 @@ const stringCollector = {
 		}
 	}
 }
+
+//ATM
+
+const ATM = {
+	totalCash: 120,
+	dispenseTwenties (numTwenties) {
+		if (this.totalCash % numTwenties === 0 && this.totalCash >= (numTwenties * 20)){
+			return this.totalCash -= (numTwenties * 20);
+		} else
+			return null;
+	}
+}

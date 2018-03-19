@@ -76,3 +76,24 @@ stringCollector.collect("goodbye");
 stringCollector.collect("okay");
 // it works
 stringCollector.admireCollection(stringCollector.collection);
+
+// ATM
+
+const atm = {
+	totalCash: 200,
+	dispenseTwenties (cash) {
+		// define variable for how much cash is taken out
+		let cashWithdrawn = 20 * cash;
+		// update value of total cash
+		this.totalCash -= cashWithdrawn
+		// set condition for insufficient funds
+		if (this.totalCash <= 0) {
+			return null;
+		}
+		// if sufficient funds, return amount taken out
+		return cashWithdrawn;
+	}
+}
+
+// console.log(atm.dispenseTwenties(6));
+console.log(atm.dispenseTwenties(12));

@@ -98,6 +98,8 @@ const atm = {
 // console.log(atm.dispenseTwenties(6)); // returns 120
 // console.log(atm.dispenseTwenties(12)); // returns null
 
+// TURTLES
+
 const Leonardo = {
 	name: "Leonardo",
 	color: "blue",
@@ -114,7 +116,47 @@ const Leonardo = {
 			return (this.name + " is eating pizza.");
 		}
 	}
-}
+};
 // Leonardo.eatPizza();
 // console.log(Leonardo.eatPizza()); works either way
 
+// CALCULATOR
+
+const calculator = {
+	output: 0,
+	multiply (x, y) {
+		const product = x * y;
+		this.output = product;
+		console.log(this.output);
+	},
+	divide (x, y) {
+		const quotient = x / y;
+		this.output = quotient;
+		console.log(this.output);
+	},
+	addition (x, y) {
+		const sum = x + y;
+		this.output = sum;
+		console.log(this.output);
+	},
+	subtraction (x, y) {
+		const difference = x - y;
+		this.output = difference;
+		console.log(this.output);
+	}
+}
+
+// calculator.multiply(10, 2);
+// calculator.multiply(-2, 8);
+// calculator.multiply(2, 2);
+// calculator.divide(10, 2);
+// calculator.divide(-2, 8);
+// calculator.divide(2, 2);
+calculator.addition(10, 2);
+calculator.addition(-2, 8);
+calculator.addition(2, 2);
+calculator.subtraction(10, 2);
+calculator.subtraction(-2, 8);
+calculator.subtraction(2, 2);
+
+// everything works. yay.

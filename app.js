@@ -115,10 +115,14 @@ for(row of foo77) {
 
 const atm = {
 	totalCash: 200,
-	dispenseTwenties () {
-// take out cash in multiples of 20
-// return total number of cash it is giving out
-// if not
+	dispenseTwenties (num) {
+		// take out cash in multiples of 20
+		const dollaBills = num * 20;
+		const amountRequested = this.totalCash - dollaBills;
+		if(amountRequested <= 0) { 
+			return null;
+		}
+		return amountRequested
 	}
 }
 

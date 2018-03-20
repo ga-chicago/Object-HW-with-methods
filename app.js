@@ -66,8 +66,8 @@ const myInformation = {
 // Play around executing your functions by accessing them through the object.
 
 const greeter = {
-	message(name) {
-		return "Hello there " + name
+		message(name) {
+			return "Hello there " + name
 	},
 		goodbyeMessage(name) {
 			return "See ya later, " + name
@@ -101,24 +101,41 @@ greeter.finalMessage("Sam");
 // Come back to this one. Confused 
 
 
-const reverseOrder = (array) => {
-	return 
-}
 
- 
+	const stringCollector = {
+		collection: [],
+		collect(str) {
+			let rev = str.split();
+			console.log(rev);
+			rev.reverse();
+			console.log(rev);
+			let joinStr = rev.join("")
+			console.log(joinStr);
+			collection = joinStr;
+		},	
+			admireCollection() {
+				for(row of stringCollector.collection)
+					console.log(row) 
+					for (element of row)
+						console.log(element)
 
-const stringCollector = {
-		 collection: ["Hi", "hello", "bye"],
-		
-		stringCollector
-			collect(str) {
-				console.log(collection.reverse())
-				return collection.reverse();
-			
+
 
 			}
+		
 
-		}
+
+			
+
+	}
+ 
+// Cant get this to work 
+
+		
+		
+
+	
+		
 
 
 // need for of loop from earlier

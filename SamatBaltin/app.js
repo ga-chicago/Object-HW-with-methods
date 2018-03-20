@@ -53,6 +53,8 @@ const stringCollector = {
 	
 	}
 }
+
+
 stringCollector.collect("inspector");
 stringCollector.collect("collector");
 stringCollector.collect("string");

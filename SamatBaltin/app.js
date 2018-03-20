@@ -61,7 +61,17 @@ const stringCollector = {
 
 
 
-
+const atm = {
+	totalCash: 200,
+	dispenseTwenties(num){
+		let toDisp = 20 * num;
+		if (this.totalCash - toDisp >= 0) {
+			return this.totalCash -= toDisp;
+		} else {
+			return null
+		}
+	}
+}
 
 
 

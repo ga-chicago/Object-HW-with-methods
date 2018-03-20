@@ -48,13 +48,13 @@ const stringCollector = {
 			console.log(this.collection[i]); //Returning in a for loop will exit immediately
 	}
 }
+}
 
 //ATM
-
 const ATM = {
-	totalCash: 120,
+	totalCash: 122,
 	dispenseTwenties (numTwenties) {
-		if (this.totalCash % numTwenties === 0 && this.totalCash >= (numTwenties * 20)){
+		if (this.totalCash / (numTwenties * 20) >= 0 && this.totalCash >= (numTwenties * 20)){
 			return this.totalCash -= (numTwenties * 20);
 		} else
 			return null;
@@ -85,7 +85,7 @@ const calculator = {
 	},
 	divide (num1, num2){
 		console.log(this.output = (num1 / num2));
-	}
+	},
 	addition(num1,num2){
 		console.log(this.output = (num1 + num2));
 	},

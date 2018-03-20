@@ -98,7 +98,7 @@ const atm = {
 
 		totalCash: 400,
 		dispenseTwenties(numberOf20){
-			if(400 - (numberOf20 * 20) >= 0){
+			if(this.totalCash - (numberOf20 * 20) >= 0){
 				console.log((numberOf20 * 20),(this.totalCash - (numberOf20*20)));
 				this.totalCash -= (numberOf20*20);
 			}

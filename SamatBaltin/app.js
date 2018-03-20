@@ -47,7 +47,9 @@ const stringCollector = {
 		this.collection.push(joinRev);
 	},
 	admireCollection(){
-		return this.collection;
+		for(let i = 0; i < this.collection.length; i++){
+			console.log(this.collection[i]);
+		}
 	
 	}
 }

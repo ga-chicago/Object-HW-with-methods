@@ -79,3 +79,17 @@ const leonardo = {
 	}
 }
 
+const calculator = {
+	output: 10,
+	multiply(num1, num2){
+		return this.output = (num1 * num2);
+	},
+	addition(num1,num2){
+		return this.output = (num1 + num2);
+	},
+	subtraction(num1,num2){
+		return this.output = (num1 - num2);
+	}
+
+}
+

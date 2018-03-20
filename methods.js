@@ -45,8 +45,7 @@ const stringCollector = {
 	},
 	admireCollection(){
 		for(i = 0; i < this.collection.length; i++){
-			console.log(this.collection[i]); //This keeps stopping at the first value in the array. 
-		}
+			console.log(this.collection[i]); //Returning in a for loop will exit immediately
 	}
 }
 
@@ -82,13 +81,16 @@ const leonardo = {
 const calculator = {
 	output: 10,
 	multiply(num1, num2){
-		return this.output = (num1 * num2);
+		console.log(this.output = (num1 * num2));
 	},
+	divide (num1, num2){
+		console.log(this.output = (num1 / num2));
+	}
 	addition(num1,num2){
-		return this.output = (num1 + num2);
+		console.log(this.output = (num1 + num2));
 	},
 	subtraction(num1,num2){
-		return this.output = (num1 - num2);
+		console.log(this.output = (num1 - num2));
 	}
 
 }

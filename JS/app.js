@@ -48,6 +48,26 @@ console.log(myInformation.incrementAge());
 console.log(myInformation.changeName('Rumpelstiltskin'));
 
 
+// Greeter
+
+
+const greeter = {
+	hello(name){
+		return 'Good morning '+ name;
+	},
+	goodbye(name){
+		return 'See you later, ' + name;
+	},
+	whoAreYou(name){
+		return 'Oh right! ' + name + " how could i forget...!";
+	}
+
+}
+console.log(greeter.hello('Joe'));
+console.log(greeter.goodbye('Josh'));
+console.log(greeter.whoAreYou('John'));
+
+
 
 
 

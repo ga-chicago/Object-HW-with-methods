@@ -67,6 +67,30 @@ console.log(greeter.hello('Joe'));
 console.log(greeter.goodbye('Josh'));
 console.log(greeter.whoAreYou('John'));
 
+// Collecting Strings
+
+const stringCollector = {
+
+	collection:[],
+	//method that will push given string into array backwards.
+	collect(str){
+		for(let i = 1; i <= str.split(' ').length; i++){
+			this.collection.push(str.split(' ')[str.split(' ').length - i]);
+		}
+
+	},
+	admireCollection(){
+		//method to print collection array one word at a time
+		for (let i = 0; i < this.collection.length; i ++){
+			console.log(this.collection[i]);
+		}
+	}
+
+}
+
+stringCollector.collect('Google and Facebook are tech companies.');
+stringCollector.admireCollection();
+
 
 
 

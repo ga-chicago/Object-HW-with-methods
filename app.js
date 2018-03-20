@@ -116,6 +116,17 @@ const Leonardo ={
 	
 }
 
+/////////////////////////## Calculator
+const calculator = {
+	output: "",
+	multiply (num1 * num2) {
+		console.log(multiply());
+
+	},
+	divide (num3 / num4) {
+
+	}
+}
 
 
 

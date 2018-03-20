@@ -42,22 +42,19 @@ const stringCollector = {
 	collection: [],
 	collect(str){
 		let rev = str.split("");
-		console.log(rev);
 		rev.reverse();
-		console.log(rev);
-		let joinStr = rev.join("")
-		console.log(joinStr);
-		// collection = joinStr;
-		// admireCollection() {
-  //           for(row of stringCollector.collection){
-  //               console.log(row) 
-  //               for (element of row){
-  //                   console.log(element)
-        //         }
-        //     }
-        // }
+		let joinRev = rev.join("")
+		this.collection.push(joinRev);
+	},
+	admireCollection(){
+		return this.collection;
+	
 	}
 }
+stringCollector.collect("inspector");
+stringCollector.collect("collector");
+stringCollector.collect("string");
+stringCollector.collect("number");
 
 
 

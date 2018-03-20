@@ -76,3 +76,23 @@ stringCollector.collect("Korg");
 stringCollector.collect("Yamaha");
 
 console.log(stringCollector.admireCollection(stringCollector.collection));
+
+//5. ATM
+const atm = {
+  totalCash: 200,
+  dispenseTwenties (cashMoney) {
+    //how much money is withdrawn?
+    let cashWithdrawn = 20 * cashMoney;
+    //then update total cash in atm
+    this.totalCash -= cashWithdrawn
+
+    //what about insufficient funds??
+    if (this.totalCash <= 0) {
+      return null;
+    }
+    //if there's enough money in ATM, return the amount withdrawn
+    return cashWithdrawn;
+  }
+}
+console.log(atm.dispenseTwenties(6));
+console.log(atm.dispenseTwenties(3));

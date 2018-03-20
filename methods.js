@@ -61,3 +61,21 @@ const ATM = {
 			return null;
 	}
 }
+
+//HUNGRY TURTLES
+
+const leonardo = {
+	name: 'Leonardo',
+	color: 'Blue',
+	weapon: 'Katana',
+	pizzaEaten: false,
+	eatPizza(bool){
+		if(this.pizzaEaten === true){
+			console.log("Leonardo has already eaten pizza");
+			return this.pizzaEaten = false;
+		} else 
+			console.log("Leonardo is eating pizza");
+			return this.pizzaEaten = true;
+	}
+}
+

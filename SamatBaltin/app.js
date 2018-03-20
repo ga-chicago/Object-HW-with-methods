@@ -75,7 +75,21 @@ const atm = {
 
 
 
-
+const leonardo = {
+	name: "Leonardo",
+	color: "Blue",
+	weapon: "Katana",
+	pizzaEaten: false,
+	eatPizza(pizza){
+		if(pizza === true){
+			this.pizzaEaten = false;
+			return "Leonardo has already eaten pizza"
+		} else {
+			this.pizzaEaten = true;
+			return "Leonardo is eating pizza"
+		}
+	}
+}
 
 
 

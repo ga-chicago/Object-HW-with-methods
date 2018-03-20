@@ -60,7 +60,8 @@ greeter.goobye('Lisa')
 //////## Collecting Strings
 const stringCollector = {
 	collection: [str1, str2],
-	collect(this.collection) {
+	collect (this.collection) {
+	},
 	function reverseString(str) {
     return str;
 	},
@@ -89,7 +90,13 @@ const stringCollector = {
 // // > => "Call me Ishmael"
 // > => "comb my on Lâncome use I"
 
-
+///////////////## ATM
+const atm = {
+	totalcash: '',
+	dispenseTwenties (num){
+		return totalcash / dispenseTwenties
+	}
+}
 
 
 

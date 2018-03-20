@@ -45,7 +45,7 @@ const stringCollector = {
 	},
 	admireCollection(){
 		for(i = 0; i < this.collection.length; i++){
-			return (this.collection[i]); //This keeps stopping at the first value in the array. 
+			console.log(this.collection[i]); //This keeps stopping at the first value in the array. 
 		}
 	}
 }

@@ -105,35 +105,73 @@ greeter.finalMessage("Sam");
 const stringCollector = {
 	collection: [],
 	collect(str){
-		let newRev = str.split("");
+		let newRev = str.split(" ");
 		newRev.reverse();
-		let joinRev = newRev.join("")
+		let joinRev = newRev.join(" ")
 		this.collection.push(joinRev);
 	},
 	admireCollection(){
+		// for(row of stringCollector.collection)
+		// 			console.log(row) 
+		// 			for (element of row)
+		// 				console.log(element)
+
 		return this.collection;
+
+
 	
 	}
 }
-stringCollector.collect("basketball");
-stringCollector.collect("soccer");
-stringCollector.collect("baseball");
-stringCollector.collect("football");
+
+stringCollector.collect("basketball", "soccer", "baseball", "football")
 
 
-stringCollector.admireCollection("basketball");
+
+stringCollector.admireCollection();
 
 
 (4) ["llabteksab", "reccos", "llabesab", "llabtoof"]
 		
+
+
+// GOING OVER IN CLASS 
+
+const stringCollector = {
+	collection: [],
+	collect(someString) {
+		// this splits it into an array of each chacater 
+	const arrayOfString = someString.split(" ");
+	// a, p, p
+	// this reveres an array the joins back into string
+	const reversedString = arrayOfString.reverse().join(" ");
+
+	this.collection.push(reversedString);
+
+	},
+
+	admireCollection(){
+		for (let i = 0; i > this.collection.length; i++) {
+			console.log(this.collection[i])
+			// return inside a for loop exits the for loop
+		}
+	}
+}
+
+stringCollector.collec("apple")
+
+stringCollector.collect
+
+
+
+
 		
 
 // Do we need for of loop here?
 
-// for(row of stringCollector.collection)
-// 					console.log(row) 
-// 					for (element of row)
-// 						console.log(element)
+				// for(row of stringCollector.collection)
+				// 	console.log(row) 
+				// 	for (element of row)
+				// 		console.log(element)
 	
 		
 

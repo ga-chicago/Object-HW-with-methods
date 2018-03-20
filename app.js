@@ -195,6 +195,53 @@ true
 
 
 
+// Create an object called calculator
+// Create a property called output
+// Create a method inside your object that will multiply two numbers and change the output value to this current value. This method should also log the value of output.
+// Create a function that will divide two numbers. It should also change the output value to this current value. This method should also log the value of output.
+// Practice using your calculator with some pairs (10, 2), (-2, 8), (2, 2).
+// If there's additional time, add methods for addition and subtraction
+
+
+
+const calculator = {
+	output: 0,
+			multiply(a, b) {
+				this.output = a * b
+				console.log(this.output);
+				return a * b
+			},
+			divide(a, b) {
+				this.output = a / b
+				console.log(this.output);   // Pretty sure I can use the same a and b again but want to double check
+				return a / b
+			},
+			add(a, b)  {
+				this.output = a + b
+				console.log(this.output);   // Pretty sure I can use the same a and b again but want to double check
+				return a + b
+			},
+			subtract(a, b) {
+				this.output = a - b
+				console.log(this.output);   
+				return a - b
+			}
+
+
+
+}
+
+calculator.multiply(4, 4);
+
+calculator.divide(15, 3);
+
+calculator.add(5, 3);
+
+calculator.subtract(15, 11);
+
+
+
+
 	
 
 

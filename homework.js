@@ -95,6 +95,76 @@ console.log(atm.totalCash)
 console.log(atm.dispenseTwenties(1))
 console.log(atm.totalCash)
 
+// Hungry Turtles
+/*
+Create an object called Leonardo.
+Leonardo should have a name attribute of "Leonardo", a color attribute of "Blue", and a weapon attribute of "Katana".
+Leonardo should also have a boolean property called pizzaEaten that is initially set to false.
+Add a method to Leonardo called eatPizza() which does the following:
+If pizzaEaten is true, print out "Leonardo has already eaten pizza" and set pizzaEaten to false.
+If pizzaEaten is false, print out "Leonardo is eating pizza" and set pizzaEaten to true.
+🔴 The commit message should read: 
+"Commit 6 - Hungry Turtles done"
+*/
+
+
+const leonardo = {
+	name: 'Leonardo',
+	color: 'blue',
+	weapon: 'Katana',
+	pizzaEaten: false,
+	eatPizza(){
+		if (this.pizzaEaten) {
+			return 'Leonardo has already eaten pizza', this.pizzaEaten = true;
+		} else {
+			return 'Leonardo is eating pizza', this.pizzaEaten = false;
+		}
+	}
+}
+
+console.log(leonardo.eatPizza())
+
+
+
+// Calculator
+
+/*
+Create an object called calculator
+
+Create a property called output
+
+Create a method inside your object that will multiply two numbers and change the output value to this current value. This method should also log the value of output.
+
+Create a function that will divide two numbers. It should also change the output value to this current value. This method should also log the value of output.
+
+Practice using your calculator with some pairs (10, 2), (-2, 8), (2, 2).
+
+If there's additional time, add methods for addition and subtraction
+
+🔴 The commit message should read: 
+"Commit 7 - Calculator done"
+*/
+
+const calculator = {
+	output: ''
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

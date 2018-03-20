@@ -115,3 +115,27 @@ const leonardo = {
     }
   }
 }
+
+// 7. calculator
+const calculator = {
+  output: 0,
+  multiply(x, y) {
+    this.output = (x * y);
+    console.log(this.output);
+  },
+  divide(x, y) {
+    this.output = (x / y);
+    console.log(this.output);
+  },
+  add(x, y) {
+    this.output = (x + y);
+    console.log(this.output);
+  },
+  subtract(x, y) {
+    this.output = (x - y);
+    console.log(this.output);
+  }
+}
+console.log(calculator.multiply(10, 2));
+console.log(calculator.divide(-2, 8));
+console.log(calculator.add(2, 2));

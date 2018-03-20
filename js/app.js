@@ -17,19 +17,23 @@ const clicker = {
 const myInformation = {
   name: "Zoe",
   age: 26,
-  fact: "I've never had a cavity.",
+  fact: "I've never had a cavity",
+  statement () {
+    return ("My name is " + this.name + "." + "I will be " + (this.age + 10) + " years old in 10 years, and a fun fact about me is " + this.fact + ".");
+  },
   getOlder () {
             this.age += 1;
-            return this.age;
   },
   newName () {
           this.name = "Rumplestiltskin"
-          console.log(this.name);
   }
 }
 
+console.log(myInformation.statement());
 myInformation.getOlder();
-myInformation.newName()
+console.log(myInformation.age);
+myInformation.newName();
+console.log(myInformation.name);
 
 //3. Greeter
 const greeter = {
@@ -43,3 +47,32 @@ const greeter = {
       return ("OHHH right!" + name + "how could I forget?!")
   }
 }
+
+console.log(greeter.goodbye("Zoe"));
+
+//4. Collecting strings
+
+const stringCollector = {
+  collection: [],
+  collect(string) {
+  //need to reverse strings. split into array and then
+  //reverse and then join as new string.
+  const stringReverse = string.split("").reverse().join("");
+  this.collection.push(stringReverse);
+},
+  //add an admireCollection method which prints out each string in the collection
+  //to the console, one line at a time
+  admireCollection (array) {
+    let stringCollection = "";
+    for (let i = 0; i < array.length; i++) {
+      stringCollection += array[i] + " ";
+      console.log(stringCollection);
+    }
+  }
+}
+stringCollector.collect("Moog");
+stringCollector.collect("Roland");
+stringCollector.collect("Korg");
+stringCollector.collect("Yamaha");
+
+console.log(stringCollector.admireCollection(stringCollector.collection));

@@ -133,6 +133,35 @@ Leonardo.eatPizza();
 Leonardo.eatPizza();
 
 
+// Calculator
+
+const calculator = {
+
+	output:0,
+	multiply(num1,num2){
+		this.output = num1 * num2;
+		console.log(this.output);
+	},
+	divide(num1,num2){
+		this.output = num1/num2;
+		console.log(this.output);
+	},
+	add(num1,num2){
+		this.output = num1 + num2;
+		console.log(this.output);
+	},
+	subtract(num1,num2){
+		this.output = num1 -num2;
+		console.log(this.output);
+	}
+}
+
+calculator.multiply(10,2);
+calculator.divide(10,2);
+calculator.add(10,2);
+calculator.subtract(10,2);
+
+
 
 
 

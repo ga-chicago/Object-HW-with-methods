@@ -92,12 +92,29 @@ const stringCollector = {
 
 ///////////////## ATM
 const atm = {
-	totalcash: '',
-	dispenseTwenties (num){
-		return totalcash / dispenseTwenties
+	totalCash: '200',
+	dispenseTwenties (num) {
+		return totalCash / dispenseTwenties
 	}
 }
 
+
+///////////////## Hungry Turtles
+const Leonardo ={
+	color: "Blue",
+	weapon: "Katana",
+},
+	pizzaEaten = false,
+	eatPizza () => {
+
+	}if(pizzaEaten = true){
+	return "Leonardo has already eaten pizza";	
+	}else if(pizzaEaten = false ){
+		return "Leonard is eating pizza"
+	}
+
+	
+}
 
 
 

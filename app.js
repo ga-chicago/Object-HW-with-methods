@@ -44,9 +44,19 @@ myInformation.statement()
 const greeter = {
 	hello (name) {
 		return "Hello" + name;
-	}
-}
+	},
+	goobye (name) {
+		return "Farewell" + '' + name + '!';
 
+	},
+	whoAreYou (name) {
+		return "Oh right ! " + '' + name + " how could I forget";
+	}
+
+}
+greeter.whoAreYou('Mathew')
+greeter.goobye('Lisa')
+//////
 
 
 

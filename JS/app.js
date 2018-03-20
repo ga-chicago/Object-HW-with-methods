@@ -92,6 +92,23 @@ stringCollector.collect('Google and Facebook are tech companies.');
 stringCollector.admireCollection();
 
 
+// ATM
+
+const atm = {
+
+		totalCash: 400,
+		dispenseTwenties(numberOf20){
+			if(400 - (numberOf20 * 20) >= 0){
+				console.log((numberOf20 * 20),(this.totalCash - (numberOf20*20)));
+				this.totalCash -= (numberOf20*20);
+			}
+			else{
+				return null;
+			}
+		}
+}
+atm.dispenseTwenties(3);
+
 
 
 

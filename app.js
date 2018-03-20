@@ -106,6 +106,7 @@ for(row of foo77) {
 }
 
 
+
 //ATM
 // Make an object called atm which has two properties:
 // 1. totalCash, the total amount of cash in the atm
@@ -125,6 +126,7 @@ const atm = {
 		return amountRequested
 	}
 }
+
 
 
 //HUNGRY TURTLES
@@ -154,6 +156,36 @@ const leonardo = {
 
 
 
+//CALCULATOR
+//1. Create an object called calculator
+//2. Create a property called output
+//3. Create a method inside your object that will multiply two numbers and change the output value to this current value. 
+//	 This method should also log the value of output.
+//4. Create a function that will divide two numbers. It should also change the output value to this current value. 
+//	 This method should also log the value of output.
+//5. Practice using your calculator with some pairs (10, 2), (-2, 8), (2, 2).
+//6. If there's additional time, add methods for addition and subtraction
 
-
-
+const calculator = {
+	property: "output",
+	multiply (n1, n2) {
+		let newValue = n1 * n2;
+		calculator.property = newValue;
+		return newValue
+	},
+	divide (n1, n2) {
+		let newValue = n1 / n2
+		calculator.property = newValue;
+		return newValue
+	},
+	add (n1, n2) {
+		let newValue = n1 + n2
+		calculator.property = newValue;
+		return newValue
+	},
+	sub (n1, n2) {
+		let newValue = n1 - n2
+		calculator.property = newValue;
+		return newValue
+	}
+}

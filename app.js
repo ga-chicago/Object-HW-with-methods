@@ -126,3 +126,34 @@ const atm = {
 	}
 }
 
+
+//HUNGRY TURTLES
+
+//1. Create an object called Leonardo.
+//2. Leonardo should have a name attribute of "Leonardo", a color attribute of "Blue", and a weapon attribute of "Katana".
+//3. Leonardo should also have a boolean property called pizzaEaten that is initially set to false.
+//4. Add a method to Leonardo called eatPizza() which does the following:
+//		 If pizzaEaten is true, print out "Leonardo has already eaten pizza" and set pizzaEaten to false.
+// 		 If pizzaEaten is false, print out "Leonardo is eating pizza" and set pizzaEaten to true.
+
+const leonardo = {
+	name: "Leonardo",
+	color: "blue",
+	weapon: "Katana",
+	pizzaEaten: false,
+	eatPizza () {
+		if(this.pizzaEaten === true) {
+			leonardo.pizzaEaten = false;
+			return this.name + " has already eaten pizza"
+		} else if(this.pizzaEaten === false) {
+			leonardo.pizzaEaten = true;
+			return this.name + " is eating pizza"
+		}
+	}
+}
+
+
+
+
+
+

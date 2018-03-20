@@ -30,3 +30,16 @@ const myInformation = {
 
 myInformation.getOlder();
 myInformation.newName()
+
+//3. Greeter
+const greeter = {
+  hello(name) {
+    return ("Hello, " + name)
+  },
+  goodbye(name) {
+      return ("До свидания, " + name)
+  },
+  whoAreYou(name) {
+      return ("OHHH right!" + name + "how could I forget?!")
+  }
+}

@@ -93,10 +93,29 @@ const leonardo = {
 
 
 
+const calculator = {
+	output1: 0,
+	output2: 0,
+	output3: 0,
+	output4: 0,
+	multiply(a, b){
+		return this.output1 = a * b;
+	},
+	divide(a,b){
+		return this.output2 = a / b;
+	},
+	add(a, b){
+		return this.output3 = a + b;
+	},
+	substract(a, b){
+		return this.output4 = a - b;
+	}
+}
 
-
-
-
+calculator.multiply(10, 2);
+calculator.add(-2, 8);
+calculator.divide(2, 2);
+calculator.substract(10, 2);
 
 
 

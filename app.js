@@ -102,43 +102,43 @@ greeter.finalMessage("Sam");
 
 
 
-	const stringCollector = {
-		collection: [],
-		collect(str) {
-			let rev = str.split();
-			console.log(rev);
-			rev.reverse();
-			console.log(rev);
-			let joinStr = rev.join("")
-			console.log(joinStr);
-			collection = joinStr;
-		},	
-			admireCollection() {
-				for(row of stringCollector.collection)
-					console.log(row) 
-					for (element of row)
-						console.log(element)
-
-
-
-			}
-		
-
-
-			
-
+const stringCollector = {
+	collection: [],
+	collect(str){
+		let newRev = str.split("");
+		newRev.reverse();
+		let joinRev = newRev.join("")
+		this.collection.push(joinRev);
+	},
+	admireCollection(){
+		return this.collection;
+	
 	}
- 
-// Cant get this to work 
+}
+stringCollector.collect("basketball");
+stringCollector.collect("soccer");
+stringCollector.collect("baseball");
+stringCollector.collect("football");
 
+
+stringCollector.admireCollection("basketball");
+
+
+(4) ["llabteksab", "reccos", "llabesab", "llabtoof"]
 		
 		
 
+// Do we need for of loop here?
+
+// for(row of stringCollector.collection)
+// 					console.log(row) 
+// 					for (element of row)
+// 						console.log(element)
 	
 		
 
 
-// need for of loop from earlier
+
 
 
 

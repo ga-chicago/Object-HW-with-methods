@@ -23,16 +23,20 @@ const clicker = {
 
 /////////////////
 const myInformation = {
-	statement () {
-		return {
-			name: "Noemi",
- 			age: 31,
- 			fact: "I am not a quiter."
+		name: "Noemi",
+ 		age: 31,
+ 		fact: "I am not a quiter",
+ 		statement () {
+ 			return this.name + " " + this.fact + " " + this.age + " " + 10;
 
+		},
+		changeNameValue() {
+			return this.age ++
+			console.log(this.changeNameValue)
 		}
 	}
-}
-myInformation.statement()
+
+console.log(myInformation.statement());
 
 
 
@@ -46,7 +50,7 @@ const greeter = {
 		return "Hello" + name;
 	},
 	goobye (name) {
-		return "Farewell" + '' + name + '!';
+		return "Farewell " + '' + name + '!';
 
 	},
 	whoAreYou (name) {
@@ -60,9 +64,9 @@ greeter.goobye('Lisa')
 //////## Collecting Strings
 const stringCollector = {
 	collection: [str1, str2],
-	collect (this.collection) {
+	collect(collection){
 	},
-	function reverseString(str) {
+	function reverseString(str){
     return str;
 	},
 	admireCollection ()	{
@@ -70,31 +74,46 @@ const stringCollector = {
 	}
 
 	}
-}
+
 // function reverseString(str) {
 //     return str;
-// }
+// ///the correct way to do it is this one
+
+const stringCollector = {
+
+	collection:[],
+	//method that will push given string into array backwards.
+	collect(somestring){
+		const arrayOfString = somestring.split('');
+		const reversedString = arrayOfString.reverse('').join('');
+		this.collection.push(reversedString);
+		console.log(reversedString, 'this is something');
+	},
+	admireCollection(){
+		//method to print collection array one word at a time
+		for (let i = 0; i < this.collection.length; i ++){
+			console.log(this.collection[i]);
+		}
+	}
+
+}
+
+stringCollector.collect("I've got a feeling that today is going to be a good day");
+stringCollector.collection();
 
 
-
-// const reverseWordOrder = (str) => {
-//   const splitString = str.split(" ");
-//   const reverseArray = splitString.reverse();
-//   return joinArray = reverseArray.join(" ");
-
-// }
-// console.log(reverseWordOrder("Ishmael me call"));
-// // console.log(reverseWordOrder("Ishmael me Call"));
-// console.log(reverseWordOrder("I use Lâncome on my comb"));
-// // console.log(reverseWordOrder("I use Lâncome on my comb"));
-// // > => "Call me Ishmael"
-// > => "comb my on Lâncome use I"
 
 ///////////////## ATM
 const atm = {
 	totalCash: '200',
-	dispenseTwenties (num) {
-		return totalCash / dispenseTwenties
+	dispenseTwenties (intervalOfTwenty) {
+		const toDispense = 20 * intervalOfTwenty;
+		if(this.totalCash - toDispense >= 0){
+			this.totalCash -= toDispense;
+		}
+		return toDispense ;
+	} else {
+		return null
 	}
 }
 
@@ -118,16 +137,17 @@ const Leonardo ={
 
 /////////////////////////## Calculator
 const calculator = {
-	output: "",
-	multiply (num1 * num2) {
-		console.log(multiply());
+	output: null,
+	multiply (num1, num2) {
+		console.log(this.output= num1 * num1);
 
 	},
 	divide (num3 / num4) {
-
+		return this.output = num3 / num4;
+		console.log(this.output);
 	}
 }
-
+calculator.divide
 
 
 

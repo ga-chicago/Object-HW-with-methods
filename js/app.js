@@ -113,9 +113,3 @@ const calculator = {
 	}
 }
 
-
-// const myInformation = {
-// 	statement () {
-
-// 	}
-// }
